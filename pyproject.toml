@@ -1,0 +1,20 @@
+[project]
+name = "fixed-income-traders"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents[viz]>=0.15.1",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.32.0",
+    "mcp>=1.9.4",
+    # Optional: install fredapi to use live FRED data
+    # pip install fredapi
+    # fredapi>=0.5.2
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
